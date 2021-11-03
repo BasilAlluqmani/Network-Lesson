@@ -21,7 +21,7 @@ class FlickrRepo {
             }
 
             override fun onFailure(call: Call<String>, t: Throwable) {
-                Log.e(tag, "Failed to fetch response")
+                Log.e(tag, "Failed to fetch response ${t.localizedMessage}")
             }
 
         })
